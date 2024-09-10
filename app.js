@@ -13,14 +13,14 @@ const users = [
     { firstName: "Charlie", lastName: "Brown", points: 180 }
 ];
 
-const newUsers = users.map(function (user) {
+const newUsers = users.map(function (user) {                //create variable for new array, newUsers
     return {
-        fullName: `${user.firstName} ${user.lastName}`,
-        membershipStatus: user.points > 100 ? "Premium" : "Standard"
+        fullName: `${user.firstName} ${user.lastName}`,     //fullName is the first and last name
+        membershipStatus: user.points > 100 ? "Premium" : "Standard"  //if points are greater than 100, membershipStatus is Premium, otherise Standard
     };
 });
 
-console.log(newUsers);
+console.log(newUsers);    //print the new array
 
 // 0: {fullName: 'Alice Johnson', membershipStatus: 'Premium'}
 // 1: {fullName: 'Bob Smith', membershipStatus: 'Standard'}
